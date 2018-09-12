@@ -1,4 +1,4 @@
-﻿<Metro:MetroWindow x:Class="RibbonMetroTest.MainWindow"
+﻿<Metro:MetroWindow x:Name="TheMainWindow" x:Class="RibbonMetroTest.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -33,7 +33,7 @@
     </Metro:MetroWindow.Resources>
     <Metro:MetroWindow.TitleTemplate>
         <DataTemplate>
-            <Fluent:RibbonTitleBar x:Name="RibbonTitleBar" Header="{Binding ElementName=window, Path=Title}" />
+            <Fluent:RibbonTitleBar x:Name="RibbonTitleBar" Header="{Binding ElementName=TheMainWindow, Path=Title}" />
         </DataTemplate>
     </Metro:MetroWindow.TitleTemplate>
     <Grid>
